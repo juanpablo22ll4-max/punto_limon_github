@@ -10,7 +10,7 @@ body{
 
   height:100vh;
 
-  background: url("/img/Diseño\ para\ fondo\ de\ una\ página.jpg") center/cover no-repeat;
+  background: url("img/Diseño\ para\ fondo\ de\ una\ página.jpg") center/cover no-repeat;
 
   display:flex;
 
