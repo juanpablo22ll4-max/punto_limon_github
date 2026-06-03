@@ -87,11 +87,28 @@ body{
   margin-top:30px;
 }
 
-.grid img{
-  width: 59vh;
-  height:60vh;
-  object-fit:center ;
-  border-radius:10px;
+.grid img {
+
+  width: 500px;
+
+  height: 500px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 }
 
 
@@ -136,52 +153,11 @@ input, textarea{
   border:none;
 }
 
-/* PAYMENTS */
-.payments{
-  display:flex;
-  justify-content:center;
-  gap:10px;
-}
 
-.pay{
-  padding:15px 20px;
-  border-radius:30px;
-  border:none;
-  cursor:pointer;
-}
-
-.stripe{ background:#635bff; color:white; }
-.paypal{ background:#ffc439; color:black; }
-
-/* MAP */
-.map{
-  width:100%;
-  height:300px;
-  border:none;
-  border-radius:10px;
-}
-
-/* WHATSAPP */
-.whatsapp{
-  background:#25D366;
-  color:black;
-}
-
-/* FOOTER */
-footer{
+.footer{
+  background:#000000;
+  color:white;
   text-align:center;
-  padding:50px;
-  background:black;
-}
-
-/* ANIMATION */
-.reveal{
-  opacity:0;
-  transform:translateY(40px);
-  transition:1s;
-}
-
-.reveal.active{
-  opacity:1;
-  transform:translateY(0);
+  padding:40px;
+  margin-top:none;
 }
