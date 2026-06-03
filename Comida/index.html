@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Punto Limon | Eventos Premium</title>
+
+  <link rel="icon" href="img/dise;o de arriba.jpg">
+
+  <link rel="stylesheet" href="comida.css">
+  <script src="comida.js" defer></script>
+</head>
+
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="overlay"></div>
+
+
+  <div class="hero-content">
+    <p>Eventos premium · Bodas · Corporativos · Servicio del mar</p>
+
+    <div class="buttons">
+      <a href="#booking" class="btn primary">Reservar evento</a>
+      <a href="#menu" class="btn ghost">Ver menú</a>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section class="section reveal">
+  <h2>Empresa de catering premium</h2>
+  <p>
+    Servicio profesional de comida del mar para eventos grandes. Montaje, logística,
+    personal de servicio y experiencia completa para cualquier ocasión.
+  </p>
+</section>
+
+<!-- GALLERY PRO -->
+<section class="gallery reveal">
+  <h2 class="letra-1">Eventos reales</h2>
+
+  <div class="grid">
+    
+    <img src="img/img de comida/1.jpeg">
+    <img src="img/img de comida/2.jpeg">
+    <img src="img/img de comida/3.jpeg">
+    <img src="img/img de comida/4.jpeg">
+    <img src="img/img de comida/5.jpeg">
+    <img src="img/img de comida/6.jpeg">
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu" class="section reveal">
+  <h2>Menú corporativo</h2>
+
+  <div class="cards">
+    <div class="card">🦐 Chicharron de Pescado</div>
+    <div class="card">🍤 Leche de Tigre</div>
+    <div class="card">🐟 Cebiche</div>
+  </div>
+</section>
+
+<!-- CALENDARIO -->
+<section id="booking" class="section reveal">
+
+  <h2>Reservas de eventos</h2>
+
+  <div class="booking-box">
+
+
+    <input type="date" id="date">
+
+    <input type="time" id="time">
+
+    <input type="number" id="people" placeholder="Cantidad de personas">
+
+    <input type="text" id="location" placeholder="Ubicación del evento">
+
+    <textarea id="details" placeholder="Detalles del evento"></textarea>
+
+    <button class="btn primary" onclick="submitBooking()">
+
+      Confirmar reserva
+
+    </button>
+
+  </div>
+
+</section>
+
+
+
+<footer>
+  © 2026 Punto Limon · Eventos Premium
+</footer>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&libraries=places"></script>
+
+</body>
+</html>
